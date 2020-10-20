@@ -1,8 +1,11 @@
 package com.ideil.verticalseekbar
 
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
+import androidx.core.content.ContextCompat
+import com.ideil.vertical_seekbar.config.VSBConfig
 import com.ideil.vertical_seekbar.entity.VerticalSeekBarPoint
 import com.ideil.vertical_seekbar.view.VerticalSeekBar
 
@@ -16,6 +19,16 @@ class MainActivity : AppCompatActivity() {
 
     private fun initSeekbar() {
         val seekbar = findViewById<VerticalSeekBar>(R.id.vsb)
+        seekbar.setupConfig(VSBConfig(this).apply {
+            background = ContextCompat.getDrawable(this@MainActivity, R.drawable.vertical_seek_bar_bg_test)!!
+            divisionBackground = ContextCompat.getDrawable(this@MainActivity, R.drawable.vertical_seek_bar_division_bg_test)!!
+
+            colorDescriptionCardBg = Color.parseColor("#000000")
+            colorDescriptionText = Color.parseColor("#FFFFFF")
+
+            colorBtnBg = Color.parseColor("#000000")
+
+        })
         seekbar.setPoints(
             arrayListOf(
                 VerticalSeekBarPoint("Point1", "1", 100.0),

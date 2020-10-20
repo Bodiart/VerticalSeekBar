@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fl_seek_bar_division"
     android:layout_width="@dimen/vsb_division_width"
     android:layout_height="@dimen/vsb_division_height"
     android:layout_marginTop="@dimen/vsb_division_margin_top"

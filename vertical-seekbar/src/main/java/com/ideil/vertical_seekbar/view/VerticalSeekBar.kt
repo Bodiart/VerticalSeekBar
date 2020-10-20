@@ -13,6 +13,7 @@ import android.widget.FrameLayout
 import android.widget.TextView
 import androidx.cardview.widget.CardView
 import com.ideil.vertical_seekbar.R
+import com.ideil.vertical_seekbar.config.VSBConfig
 import com.ideil.vertical_seekbar.entity.VerticalSeekBarPoint
 import com.ideil.vertical_seekbar.extansions.VSBSetListener
 import com.ideil.vertical_seekbar.extansions.VSBSetMarginBot
@@ -32,7 +33,6 @@ open class VerticalSeekBar @JvmOverloads constructor(
     defStyleAttr: Int = 0
 ) : FrameLayout(context, attrs, defStyleAttr) {
     private val tag = VerticalSeekBar::class.java.simpleName
-
 
     // callbacks
     var onProgressChangeListener: ((Int, VerticalSeekBarPoint?) -> Unit)? = null
@@ -378,6 +378,26 @@ open class VerticalSeekBar @JvmOverloads constructor(
     }
 
     /**
+     * Config setup
+     * */
+
+    fun setupConfig(config: VSBConfig) {
+        // drawable START
+        view_vertical_seek_bar_bg?.background = config.background
+        fl_seek_bar_division?.background = config.divisionBackground // todo send to division view
+        // drawable END
+
+        // colors START
+        // description card
+        cv_vertical_seek_bar_description_card?.setCardBackgroundColor(config.colorDescriptionCardBg)
+        tv_vertical_seek_bar_chosen_radius_description?.setTextColor(config.colorDescriptionText)
+        // btn
+        cv_vertical_seek_bar_btn_card?.setCardBackgroundColor(config.colorBtnBg)
+        tv_vertical_seek_bar_chosen_point?.setTextColor(config.colorBtnText)
+        // colors END
+    }
+
+    /**
      * View getters
      * */
 
@@ -404,5 +424,14 @@ open class VerticalSeekBar @JvmOverloads constructor(
 
     private val tv_vertical_seek_bar_chosen_radius_description: TextView?
         get() = findViewById(R.id.tv_vertical_seek_bar_chosen_radius_description)
+
+    private val view_vertical_seek_bar_bg: View?
+        get() = findViewById(R.id.view_vertical_seek_bar_bg)
+
+    private val tv_vertical_seek_bar_chosen_point: TextView?
+        get() = findViewById(R.id.tv_vertical_seek_bar_chosen_point)
+
+    private val fl_seek_bar_division: FrameLayout?
+        get() = findViewById(R.id.fl_seek_bar_division)
 
 }
