@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    seekbar START-->
+<!--    description card-->
+    <color name="vsb_description_card_bg">#FFFFFF</color>
+    <color name="vsb_description_text">#DF4264</color>
+<!--    btn-->
+    <color name="vsb_btn_bg">#DF4264</color>
+    <color name="vsb_btn_text">#FFFFFF</color>
+    <!--    seekbar END-->
+</resources>

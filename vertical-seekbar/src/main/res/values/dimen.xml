@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    division-->
+    <dimen name="vsb_division_width">34dp</dimen>
+    <dimen name="vsb_division_height">34dp</dimen>
+    <dimen name="vsb_division_margin_top">14dp</dimen>
+    <dimen name="vsb_division_margin_bottom">19dp</dimen>
+<!--    seek bar START-->
+<!--    description-->
+    <dimen name="vsb_description_card_width">60dp</dimen>
+    <dimen name="vsb_description_card_height">30dp</dimen>
+    <dimen name="vsb_description_card_margin_start">10dp</dimen>
+    <dimen name="vsb_description_card_margin_end">2dp</dimen>
+    <dimen name="vsb_description_card_pivot_x">60dp</dimen>
+    <dimen name="vsb_description_card_pivot_y">15dp</dimen>
+    <dimen name="vsb_description_card_corner_radius">15dp</dimen>
+    <dimen name="vsb_description_card_elevation">5dp</dimen>
+    <!--    background-->
+    <dimen name="vsb_bg_layout_width">56dp</dimen>
+    <dimen name="vsb_bg_width">5dp</dimen>
+    <dimen name="vsb_bg_layout_margin_top">35dp</dimen>
+    <dimen name="vsb_bg_layout_margin_end">16dp</dimen>
+    <dimen name="vsb_bg_layout_margin_bottom">35dp</dimen>
+<!--    top/bot parts-->
+    <dimen name="vsb_top_part_height">35dp</dimen>
+    <dimen name="vsb_bot_part_height">35dp</dimen>
+<!--    btn-->
+    <dimen name="vsb_btn_width">56dp</dimen>
+    <dimen name="vsb_btn_height">56dp</dimen>
+    <dimen name="vsb_btn_margin_top">7dp</dimen>
+    <dimen name="vsb_btn_margin_bot">7dp</dimen>
+    <dimen name="vsb_btn_corner_radius">28dp</dimen>
+    <dimen name="vsb_btn_elevation">5dp</dimen>
+<!--    seek bar END-->
+</resources>

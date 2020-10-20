@@ -400,7 +400,7 @@ open class VerticalSeekBar @JvmOverloads constructor(
         get() = findViewById(R.id.fl_vertical_seek_bar_division_container)
 
     private val tv_vertical_seek_bar_chosen_radius: TextView?
-        get() = findViewById(R.id.tv_vertical_seek_bar_chosen_radius)
+        get() = findViewById(R.id.tv_vertical_seek_bar_chosen_point)
 
     private val tv_vertical_seek_bar_chosen_radius_description: TextView?
         get() = findViewById(R.id.tv_vertical_seek_bar_chosen_radius_description)

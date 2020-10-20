@@ -2,22 +2,21 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="wrap_content"
-    android:layout_height="match_parent"
-    android:layout_marginTop="9dp">
+    android:layout_height="match_parent">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cv_vertical_seek_bar_description_card"
-        android:layout_width="60dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="2dp"
+        android:layout_width="@dimen/vsb_description_card_width"
+        android:layout_height="@dimen/vsb_description_card_height"
+        android:layout_marginStart="@dimen/vsb_description_card_margin_start"
+        android:layout_marginEnd="@dimen/vsb_description_card_margin_end"
         android:scaleX="0"
         android:scaleY="0"
-        android:transformPivotX="60dp"
-        android:transformPivotY="15dp"
-        app:cardCornerRadius="15dp"
-        app:cardElevation="5dp"
-        app:cardBackgroundColor="#fff"
+        android:transformPivotX="@dimen/vsb_description_card_pivot_x"
+        android:transformPivotY="@dimen/vsb_description_card_pivot_y"
+        app:cardCornerRadius="@dimen/vsb_description_card_corner_radius"
+        app:cardElevation="@dimen/vsb_description_card_elevation"
+        app:cardBackgroundColor="@color/vsb_description_card_bg"
         app:layout_constraintBottom_toBottomOf="@id/cv_vertical_seek_bar_btn_card"
         app:layout_constraintEnd_toStartOf="@id/fl_vertical_seek_bar_bg_layout"
         app:layout_constraintStart_toStartOf="parent"
@@ -32,25 +31,25 @@
             android:paddingTop="4dp"
             android:paddingBottom="4dp"
             android:text="10 км"
-            android:textColor="#DF4264" />
+            android:textColor="@color/vsb_description_text" />
 
     </androidx.cardview.widget.CardView>
 
     <FrameLayout
         android:id="@+id/fl_vertical_seek_bar_bg_layout"
-        android:layout_width="56dp"
+        android:layout_width="@dimen/vsb_bg_layout_width"
         android:layout_height="0dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="35dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="35dp"
+        android:layout_marginTop="@dimen/vsb_bg_layout_margin_top"
+        android:layout_marginEnd="@dimen/vsb_bg_layout_margin_end"
+        android:layout_marginBottom="@dimen/vsb_bg_layout_margin_bottom"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <View
             android:id="@+id/view_vertical_seek_bar_bg"
-            android:layout_width="5dp"
+            android:layout_width="@dimen/vsb_bg_width"
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:background="@drawable/vertical_seek_bar_bg" />
@@ -60,7 +59,7 @@
     <View
         android:id="@+id/view_vertical_seek_bar_top"
         android:layout_width="0dp"
-        android:layout_height="35dp"
+        android:layout_height="@dimen/vsb_top_part_height"
         app:layout_constraintEnd_toEndOf="@id/fl_vertical_seek_bar_bg_layout"
         app:layout_constraintStart_toStartOf="@id/fl_vertical_seek_bar_bg_layout"
         app:layout_constraintTop_toTopOf="parent" />
@@ -68,7 +67,7 @@
     <View
         android:id="@+id/view_vertical_seek_bar_bot"
         android:layout_width="0dp"
-        android:layout_height="35dp"
+        android:layout_height="@dimen/vsb_bot_part_height"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@id/fl_vertical_seek_bar_bg_layout"
         app:layout_constraintStart_toStartOf="@id/fl_vertical_seek_bar_bg_layout" />
@@ -82,14 +81,14 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cv_vertical_seek_bar_btn_card"
-        android:layout_width="56dp"
-        android:layout_height="56dp"
+        android:layout_width="@dimen/vsb_btn_width"
+        android:layout_height="@dimen/vsb_btn_height"
         android:layout_gravity="center_horizontal|bottom"
-        android:layout_marginTop="7dp"
-        android:layout_marginBottom="7dp"
-        app:cardBackgroundColor="#DF4264"
-        app:cardCornerRadius="28dp"
-        app:cardElevation="5dp"
+        android:layout_marginTop="@dimen/vsb_btn_margin_top"
+        android:layout_marginBottom="@dimen/vsb_btn_margin_bot"
+        app:cardBackgroundColor="@color/vsb_btn_bg"
+        app:cardCornerRadius="@dimen/vsb_btn_corner_radius"
+        app:cardElevation="@dimen/vsb_btn_elevation"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@id/fl_vertical_seek_bar_bg_layout"
         app:layout_constraintStart_toStartOf="@id/fl_vertical_seek_bar_bg_layout">
@@ -113,15 +112,15 @@
                 android:layout_marginEnd="2dp">
 
                 <TextView
-                    android:id="@+id/tv_vertical_seek_bar_chosen_radius"
+                    android:id="@+id/tv_vertical_seek_bar_chosen_point"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:fontFamily="@font/montserrat_medium"
                     android:paddingTop="8dp"
                     android:paddingBottom="8dp"
-                    android:text="Усі"
-                    android:textColor="#FFF" />
+                    android:text="All"
+                    android:textColor="@color/vsb_btn_text" />
 
             </FrameLayout>
 

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="34dp"
-    android:layout_height="34dp"
-    android:layout_marginTop="14dp"
-    android:layout_marginBottom="19dp"
+    android:layout_width="@dimen/vsb_division_width"
+    android:layout_height="@dimen/vsb_division_height"
+    android:layout_marginTop="@dimen/vsb_division_margin_top"
+    android:layout_marginBottom="@dimen/vsb_division_margin_bottom"
     android:layout_gravity="center_horizontal|bottom"
     android:background="@drawable/vertical_seek_bar_division_bg"
     xmlns:app="http://schemas.android.com/apk/res-auto">
