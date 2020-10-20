@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="34dp"
+    android:layout_height="34dp"
+    android:layout_marginTop="14dp"
+    android:layout_marginBottom="19dp"
+    android:layout_gravity="center_horizontal|bottom"
+    android:background="@drawable/vertical_seek_bar_division_bg"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tv_vertical_seek_bar_division_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        android:text="13 км"
+        android:textSize="9sp"
+        android:textColor="#DF4264"
+        android:fontFamily="@font/montserrat_medium"
+        android:layout_gravity="center"/>
+
+</FrameLayout>
