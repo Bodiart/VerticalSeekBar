@@ -27,8 +27,10 @@ class MainActivity : AppCompatActivity() {
             colorDescriptionText = Color.parseColor("#FFFFFF")
 
             colorBtnBg = Color.parseColor("#000000")
+//            dimenBtnTextSizePx = 60f
 
             colorDivisionText = Color.parseColor("#000000")
+//            dimenDivisionTextSizePx = 60f
 
         })
         seekbar.setPoints(
@@ -42,7 +44,7 @@ class MainActivity : AppCompatActivity() {
                 VerticalSeekBarPoint("Point7", "7", 700.0),
                 VerticalSeekBarPoint("Point8", "8", 800.0),
                 VerticalSeekBarPoint("Point9", "9", 900.0),
-                VerticalSeekBarPoint("Point10", "10", 1000.0),
+                VerticalSeekBarPoint("Point10", "10", 1000.0)
             )
         )
         seekbar.onProgressChangeListener = { progress, point ->

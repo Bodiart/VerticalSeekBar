@@ -7,6 +7,7 @@ import android.content.Context
 import android.os.Handler
 import android.os.Looper
 import android.util.AttributeSet
+import android.util.TypedValue
 import android.view.MotionEvent
 import android.view.View
 import android.view.animation.DecelerateInterpolator
@@ -405,6 +406,11 @@ open class VerticalSeekBar @JvmOverloads constructor(
         cv_vertical_seek_bar_btn_card?.setCardBackgroundColor(config.colorBtnBg)
         tv_vertical_seek_bar_chosen_point?.setTextColor(config.colorBtnText)
         // colors END
+
+        // dimen start
+        // btn
+        tv_vertical_seek_bar_chosen_point?.setTextSize(TypedValue.COMPLEX_UNIT_PX, config.dimenBtnTextSizePx)
+        // dimen end
     }
 
     /**

@@ -2,7 +2,7 @@ package com.ideil.vertical_seekbar.view
 
 import android.annotation.SuppressLint
 import android.content.Context
-import android.util.Log
+import android.util.TypedValue
 import android.widget.FrameLayout
 import android.widget.TextView
 import com.ideil.vertical_seekbar.R
@@ -54,6 +54,7 @@ class VerticalSeekBarDivision constructor(
         this.config = config
         fl_seek_bar_division?.background = config.divisionBackground
         tv_vertical_seek_bar_division_text?.setTextColor(config.colorDivisionText)
+        tv_vertical_seek_bar_division_text?.setTextSize(TypedValue.COMPLEX_UNIT_PX, config.dimenDivisionTextSizePx)
     }
 
     /**

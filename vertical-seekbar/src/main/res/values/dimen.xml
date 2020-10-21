@@ -5,6 +5,7 @@
     <dimen name="vsb_division_height">34dp</dimen>
     <dimen name="vsb_division_margin_top">14dp</dimen>
     <dimen name="vsb_division_margin_bottom">19dp</dimen>
+    <dimen name="vsb_division_text_size">9sp</dimen>
 <!--    seek bar START-->
 <!--    description-->
     <dimen name="vsb_description_card_width">60dp</dimen>
@@ -31,5 +32,6 @@
     <dimen name="vsb_btn_margin_bot">7dp</dimen>
     <dimen name="vsb_btn_corner_radius">28dp</dimen>
     <dimen name="vsb_btn_elevation">5dp</dimen>
+    <dimen name="vsb_btn_text_size">14sp</dimen>
 <!--    seek bar END-->
 </resources>

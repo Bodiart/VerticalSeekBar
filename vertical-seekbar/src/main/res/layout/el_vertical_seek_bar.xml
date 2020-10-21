@@ -115,6 +115,7 @@
                     android:id="@+id/tv_vertical_seek_bar_chosen_point"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textSize="@dimen/vsb_btn_text_size"
                     android:layout_gravity="center"
                     android:fontFamily="@font/montserrat_medium"
                     android:paddingTop="8dp"

@@ -3,6 +3,7 @@ package com.ideil.vertical_seekbar.config
 import android.content.Context
 import com.ideil.vertical_seekbar.R
 import com.ideil.vertical_seekbar.extansions.getColor
+import com.ideil.vertical_seekbar.extansions.getDimen
 import com.ideil.vertical_seekbar.extansions.getDrawable
 
 class VSBConfig(context: Context) {
@@ -36,4 +37,7 @@ class VSBConfig(context: Context) {
 //    var dimenDivisionWidth = R.dimen.vsb_division_width.getDimen(context)
 //    var dimenDivisionHeight = R.dimen.vsb_division_height.getDimen(context)
 //    var dimenDivisionMarginTop = R.dimen.vsb_division_height.getDimen(context)
+    var dimenDivisionTextSizePx = R.dimen.vsb_division_text_size.getDimen(context)
+    // seekbar btn
+    var dimenBtnTextSizePx = R.dimen.vsb_btn_text_size.getDimen(context)
 }
