@@ -9,6 +9,7 @@ import android.os.Looper
 import android.util.AttributeSet
 import android.view.MotionEvent
 import android.view.View
+import android.view.animation.DecelerateInterpolator
 import android.widget.FrameLayout
 import android.widget.TextView
 import androidx.cardview.widget.CardView
@@ -53,7 +54,7 @@ open class VerticalSeekBar @JvmOverloads constructor(
     private var barCount = pointList.size
 
     // progress
-    private val maxProgress = barCount - 1
+    private var maxProgress = barCount - 1
     private var progress = 0
 
     // btn
@@ -226,6 +227,7 @@ open class VerticalSeekBar @JvmOverloads constructor(
 
     private fun setupStartPoint() {
         tv_vertical_seek_bar_chosen_radius?.text = pointList.getOrNull(0)?.name
+        tv_vertical_seek_bar_chosen_radius_description?.text = pointList.getOrNull(0)?.name
     }
 
     private fun updateProgress(newProgress: Int) {
@@ -335,6 +337,7 @@ open class VerticalSeekBar @JvmOverloads constructor(
                 0L
             else
                 200L
+            interpolator = DecelerateInterpolator()
         }
         descriptionObjectAnimator?.start()
     }
@@ -358,6 +361,7 @@ open class VerticalSeekBar @JvmOverloads constructor(
                 0L
             else
                 200L
+            interpolator = DecelerateInterpolator()
         }
         descriptionObjectAnimator?.start()
     }
@@ -377,6 +381,7 @@ open class VerticalSeekBar @JvmOverloads constructor(
         pointList = points
         pointListNames = pointList.map { it.name }
         barCount = pointList.size
+        maxProgress = barCount - 1
         setupStartPoint()
     }
 

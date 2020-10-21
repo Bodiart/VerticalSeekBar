@@ -37,7 +37,12 @@ class MainActivity : AppCompatActivity() {
                 VerticalSeekBarPoint("Point2", "2", 200.0),
                 VerticalSeekBarPoint("Point3", "3", 300.0),
                 VerticalSeekBarPoint("Point4", "4", 400.0),
-                VerticalSeekBarPoint("Point5", "5", 500.0)
+                VerticalSeekBarPoint("Point5", "5", 500.0),
+                VerticalSeekBarPoint("Point6", "6", 600.0),
+                VerticalSeekBarPoint("Point7", "7", 700.0),
+                VerticalSeekBarPoint("Point8", "8", 800.0),
+                VerticalSeekBarPoint("Point9", "9", 900.0),
+                VerticalSeekBarPoint("Point10", "10", 1000.0),
             )
         )
         seekbar.onProgressChangeListener = { progress, point ->
