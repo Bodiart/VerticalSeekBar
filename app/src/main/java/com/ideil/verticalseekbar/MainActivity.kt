@@ -28,6 +28,8 @@ class MainActivity : AppCompatActivity() {
 
             colorBtnBg = Color.parseColor("#000000")
 
+            colorDivisionText = Color.parseColor("#000000")
+
         })
         seekbar.setPoints(
             arrayListOf(

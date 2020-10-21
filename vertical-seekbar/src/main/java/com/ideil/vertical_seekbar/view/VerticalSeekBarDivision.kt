@@ -6,6 +6,7 @@ import android.util.Log
 import android.widget.FrameLayout
 import android.widget.TextView
 import com.ideil.vertical_seekbar.R
+import com.ideil.vertical_seekbar.config.VSBConfig
 import com.ideil.vertical_seekbar.extansions.VBSLog
 
 @Suppress("PrivatePropertyName")
@@ -14,7 +15,8 @@ class VerticalSeekBarDivision constructor(
     context: Context,
     val pointName: String,
     val progressStep: Float,
-    val progress: Int
+    val progress: Int,
+    var config: VSBConfig
 ): FrameLayout(context) {
     private val tag = VerticalSeekBarDivision::class.java.simpleName
 
@@ -27,6 +29,7 @@ class VerticalSeekBarDivision constructor(
         inflate(context, R.layout.el_vertical_seek_bar_division, this)
         setupDistance()
         setupTranslationY()
+        setupConfig(config)
     }
 
     /**
@@ -44,10 +47,23 @@ class VerticalSeekBarDivision constructor(
     }
 
     /**
+     * Public func-s
+     * */
+
+    fun setupConfig(config: VSBConfig) {
+        this.config = config
+        fl_seek_bar_division?.background = config.divisionBackground
+        tv_vertical_seek_bar_division_text?.setTextColor(config.colorDivisionText)
+    }
+
+    /**
      * View getters
      * */
 
     private val tv_vertical_seek_bar_division_text: TextView?
         get() = findViewById(R.id.tv_vertical_seek_bar_division_text)
+
+    private val fl_seek_bar_division: FrameLayout?
+        get() = findViewById(R.id.fl_seek_bar_division)
 
 }

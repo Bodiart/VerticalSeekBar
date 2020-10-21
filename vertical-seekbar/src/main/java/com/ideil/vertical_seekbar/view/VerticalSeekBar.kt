@@ -34,6 +34,8 @@ open class VerticalSeekBar @JvmOverloads constructor(
 ) : FrameLayout(context, attrs, defStyleAttr) {
     private val tag = VerticalSeekBar::class.java.simpleName
 
+    // config
+    var config = VSBConfig(context)
     // callbacks
     var onProgressChangeListener: ((Int, VerticalSeekBarPoint?) -> Unit)? = null
     var onPressListener: ((Int, VerticalSeekBarPoint?) -> Unit)? = null
@@ -213,7 +215,8 @@ open class VerticalSeekBar @JvmOverloads constructor(
                     context,
                     pointList[progress].name,
                     step,
-                    progress
+                    progress,
+                    config
                 )
                 divisionsList.add(division)
                 fl_vertical_seek_bar_division_container?.addView(division)
@@ -382,9 +385,11 @@ open class VerticalSeekBar @JvmOverloads constructor(
      * */
 
     fun setupConfig(config: VSBConfig) {
+        this.config = config
+        // divisions
+        divisionsList.forEach { it.setupConfig(config) }
         // drawable START
         view_vertical_seek_bar_bg?.background = config.background
-        fl_seek_bar_division?.background = config.divisionBackground // todo send to division view
         // drawable END
 
         // colors START

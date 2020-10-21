@@ -25,6 +25,8 @@ class VSBConfig(context: Context) {
     // btn
     var colorBtnBg = R.color.vsb_btn_bg.getColor(context)!!
     var colorBtnText = R.color.vsb_btn_text.getColor(context)!!
+    // division
+    var colorDivisionText = R.color.vsb_division_text.getColor(context)!!
 
     /**
      * Dimens

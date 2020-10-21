@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<!--    seekbar division-->
+    <color name="vsb_division_text">#DF4264</color>
 <!--    seekbar START-->
 <!--    description card-->
     <color name="vsb_description_card_bg">#FFFFFF</color>

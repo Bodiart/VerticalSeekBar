@@ -18,7 +18,7 @@
         android:layout_marginEnd="3dp"
         android:text="13 км"
         android:textSize="9sp"
-        android:textColor="#DF4264"
+        android:textColor="@color/vsb_division_text"
         android:fontFamily="@font/montserrat_medium"
         android:layout_gravity="center"/>
 
