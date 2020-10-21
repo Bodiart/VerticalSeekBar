@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:text="Hello World!"
+        android:text="Progress: "
         android:textColor="#000"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,6 +24,7 @@
         android:layout_marginTop="16dp"
         android:textColor="#000"
         android:textSize="16sp"
+        android:text="Released: "
         app:layout_constraintStart_toStartOf="@id/progress_changed"
         app:layout_constraintTop_toBottomOf="@id/progress_changed" />
 
@@ -34,6 +35,7 @@
         android:layout_marginTop="16dp"
         android:textColor="#000"
         android:textSize="16sp"
+        android:text="Press: "
         app:layout_constraintStart_toStartOf="@id/released"
         app:layout_constraintTop_toBottomOf="@id/released" />
 
@@ -44,6 +46,7 @@
         android:layout_marginTop="16dp"
         android:textColor="#000"
         android:textSize="16sp"
+        android:text="Point value: "
         app:layout_constraintStart_toStartOf="@id/press"
         app:layout_constraintTop_toBottomOf="@id/press" />
 
