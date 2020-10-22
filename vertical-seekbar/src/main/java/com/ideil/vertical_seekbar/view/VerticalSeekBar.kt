@@ -73,6 +73,8 @@ open class VerticalSeekBar @JvmOverloads constructor(
     // divisions
     private val divisionsList = ArrayList<VerticalSeekBarDivision>(barCount)
 
+    private var inited = false
+
 
     init {
         init(context)
@@ -85,6 +87,7 @@ open class VerticalSeekBar @JvmOverloads constructor(
         setupSeekBarBgHeight()
         addDivisions()
         setupStartPoint()
+        inited = true
     }
 
     private fun setupTouchListeners() {
